@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dynamic</title>
+
+    <style>
+
+        body {
+            font: 400 15px Lato, sans-serif;
+            line-height: 1.8;
+            color: #818181;
+        }
+
+        .jumbotron {
+            background-color: #5d3380;
+            color: #fff;
+            padding: 100px 25px;
+            font-family: Montserrat, sans-serif;
+            height: 100vh;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="jumbotron text-center" id="dynamic">
+    <h1 id="text"></h1>
+</div>
+
+<script>
+    document.getElementById("text").innerHTML= window.location.hostname +  " is for sale"
+</script>
+</body>
+</html>
